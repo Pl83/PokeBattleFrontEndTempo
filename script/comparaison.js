@@ -1,4 +1,6 @@
 socket.emit('join', localStorage.getItem('room'))
+//let url = 'http://localhost:3000/';
+let url = 'https://pokebattlebackend.onrender.com';
 
 function clear(){
     localStorage.remove('room')

@@ -1,3 +1,5 @@
+//let url = 'http://localhost:3000/';
+let url = 'https://pokebattlebackend.onrender.com';
 localStorage.removeItem('room');
 //FRONT
 
@@ -41,14 +43,14 @@ fetch('https://pokeapi.co/api/v2/pokemon/' + localStorage.getItem("favpokemon"))
 
 
 function btn(){
-    fetch('http://localhost:3000/logout', {
+    fetch( url + '/logout', {
         method: "GET",
         headers: {
             'Content-Type': 'application/json;charset=utf-8'
         },
 
     })
-    let logout = fetch('http://localhost:3000/logout')
+    let logout = fetch(url + '/logout')
         .then(response => response.json())
         .then(data => {
             console.log(data)
@@ -63,7 +65,7 @@ function btn(){
 
 
 function deletes(){
-    fetch('http://localhost:3000/delete', {
+    fetch(url + '/delete', {
         method: "DELETE",
         headers: {
             'Content-Type': 'application/json;charset=utf-8'

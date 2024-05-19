@@ -1,5 +1,6 @@
 localStorage.clear();
-
+//let url = 'http://localhost:3000/';
+let url = 'https://pokebattlebackend.onrender.com';
 function register(){
 
     let user = document.querySelector("#userr").value;
